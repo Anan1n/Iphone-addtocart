@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/production.css">
+    <title>tailwind css</title>
+</head>
+<body class="dark:bg-slate-900 bg-white">
+    <nav class="w-full">
+        <div class="px-4 flex items-center justify-between gap-3 text-white font-semibold mx-auto h-[56px] bg-violet-600">
+        <div>
+            <p>aPhone</p>
+        </div>
+        <ul class="flex gap-3">
+            <li>Phone</li>
+            <li>Tablet</li>
+            <li>Watches</li>
+        </ul>
+        <div id="btnTheme" onclick="darkTheme()">
+            <p>Dark Mode</p>
+        </div>
+        </div>
+    </nav>
+
+    <div class="mx-auto max-w-6xl">
+    <div class="grid place-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div class=" max-w-[450px] flex-col border border-slate-600 p-4 m-4 space-y-6">
+        <img class="mx-auto w-[200px]" src="/img/iphone-4.png" alt="">
+        <p class="text-3xl font-bold">Title</p>
+        <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolorem. Culpa, blanditiis voluptatibus labore nostrum facilis veritatis mollitia? A, odit?</p>
+        <div class="gap-2 items-center flex">
+            <p>$240.00</p>
+            <button class= "hover:-translate-y-3 transition-all duration-500 hover:opacity-50 shadow-md bg-green-400 px-4 py-2 rounded-full text-sm text-white">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class=" max-w-[450px] flex-col border border-slate-600 p-4 m-4 space-y-6">
+        <img class="mx-auto w-[200px]" src="/img/iphone-4.png" alt="">
+        <p class="text-3xl font-bold">Title</p>
+        <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolorem. Culpa, blanditiis voluptatibus labore nostrum facilis veritatis mollitia? A, odit?</p>
+        <div class="gap-2 items-center flex">
+            <p>$240.00</p>
+            <button class= "hover:-translate-y-3 transition-all duration-500 hover:opacity-50 shadow-md bg-green-400 px-4 py-2 rounded-full text-sm text-white">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class=" max-w-[450px] flex-col border border-slate-600 p-4 m-4 space-y-6">
+        <img class="mx-auto w-[200px]" src="/img/iphone-4.png" alt="">
+        <p class="text-3xl font-bold">Title</p>
+        <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolorem. Culpa, blanditiis voluptatibus labore nostrum facilis veritatis mollitia? A, odit?</p>
+        <div class="gap-2 items-center flex">
+            <p>$240.00</p>
+            <button class= "hover:-translate-y-3 transition-all duration-500 hover:opacity-50 shadow-md bg-green-400 px-4 py-2 rounded-full text-sm text-white">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class=" max-w-[450px] flex-col border border-slate-600 p-4 m-4 space-y-6">
+        <img class="mx-auto w-[200px]" src="/img/iphone-4.png" alt="">
+        <p class="text-3xl font-bold">Title</p>
+        <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolorem. Culpa, blanditiis voluptatibus labore nostrum facilis veritatis mollitia? A, odit?</p>
+        <div class="gap-2 items-center flex">
+            <p>$240.00</p>
+            <button class= "hover:-translate-y-3 transition-all duration-500 hover:opacity-50 shadow-md bg-green-400 px-4 py-2 rounded-full text-sm text-white">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class=" max-w-[450px] flex-col border border-slate-600 p-4 m-4 space-y-6">
+        <img class="mx-auto w-[200px]" src="/img/iphone-4.png" alt="">
+        <p class="text-3xl font-bold">Title</p>
+        <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolorem. Culpa, blanditiis voluptatibus labore nostrum facilis veritatis mollitia? A, odit?</p>
+        <div class="gap-2 items-center flex">
+            <p>$240.00</p>
+            <button class= "hover:-translate-y-3 transition-all duration-500 hover:opacity-50 shadow-md bg-green-400 px-4 py-2 rounded-full text-sm text-white">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class=" max-w-[450px] flex-col border border-slate-600 p-4 m-4 space-y-6">
+        <img class="mx-auto w-[200px]" src="/img/iphone-4.png" alt="">
+        <p class="text-3xl font-bold">Title</p>
+        <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolorem. Culpa, blanditiis voluptatibus labore nostrum facilis veritatis mollitia? A, odit?</p>
+        <div class="gap-2 items-center flex">
+            <p>$240.00</p>
+            <button class= "hover:-translate-y-3 transition-all duration-500 hover:opacity-50 shadow-md bg-green-400 px-4 py-2 rounded-full text-sm text-white">Add to Cart</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    let isDark = false;
+    let btnTheme = document.getElementById('btnTheme');
+
+    function darkTheme() {
+        if (isDark) {
+            isDark = false;
+            btnTheme.innerText = "Dark Mode";
+            btnTheme.classlist.remove();
+        }
+
+        else {
+            isDark = true;
+            btnTheme.innerText = "Light Mode";
+            btnTheme.classlist.add(Dark);
+        }
+    }
+
+</script>
+</body>
+</html>
